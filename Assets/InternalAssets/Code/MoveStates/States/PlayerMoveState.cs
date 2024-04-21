@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMoveState : IControllState
+public class PlayerMoveState : IControlState
 {
     public event Action OnCastSpell_Performed;
     
@@ -27,7 +27,7 @@ public class PlayerMoveState : IControllState
         _characterController = characterController;
         moveStats = stats;
         inputActions = new Controls();
-        _moveSpeed = moveStats.WalkMoveSpeed;
+        _moveSpeed = moveStats.WalkSpeed;
     }
 
     public void Enter()
@@ -74,7 +74,7 @@ public class PlayerMoveState : IControllState
 
     private void Sprint()
     {
-        _moveSpeed = sprintScale > 0 ? moveStats.RunWalkSpeed : moveStats.WalkMoveSpeed;
+        _moveSpeed = sprintScale > 0 ? moveStats.RunSpeed : moveStats.WalkSpeed;
     }
 
     private void Rotation()

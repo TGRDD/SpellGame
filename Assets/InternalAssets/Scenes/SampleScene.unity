@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 392fc08691227f544b4da565d009c951, type: 2}
 --- !u!1 &337897082
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,6 +562,7 @@ GameObject:
   - component: {fileID: 1816374723}
   - component: {fileID: 1816374722}
   - component: {fileID: 1816374721}
+  - component: {fileID: 1816374729}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -581,15 +582,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1edb369f0a16c244a6902f4e1a1082d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnCastSpell:
-    m_PersistentCalls:
-      m_Calls: []
-  _moveComponentsStorage: {fileID: 1816374722}
-  moveStats:
-    WalkMoveSpeed: 10
-    RunWalkSpeed: 20
-    GravityScale: 10
-    RotationScale: 25
 --- !u!114 &1816374722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -723,3 +715,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1816374729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816374720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06501a98693b11a47b0e06fc28df353d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveComponentsStorage: {fileID: 1816374722}
+  _controllableHandler: {fileID: 1816374721}
+  moveStats:
+    WalkSpeed: 10
+    RunSpeed: 20
+    GravityScale: 10
+    RotationScale: 20
+  defaultControlState: 2

@@ -1,6 +1,6 @@
 using System;
 
-public interface IControllState
+public interface IControlState
 {
     event Action OnCastSpell_Performed;
     void Enter();
