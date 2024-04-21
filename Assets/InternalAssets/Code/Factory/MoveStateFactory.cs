@@ -2,9 +2,9 @@ using UnityEngine;
 
 public static class MoveStateFactory
 {
-    public static IMoveState CreatePlayerMoveState(CharacterController characterController)
+    public static IControllState CreatePlayerMoveState(CharacterController characterController, MoveStats stats, Camera playerCamera)
     {
-        return new PlayerMoveState(characterController);
+        return new PlayerMoveState(characterController, stats, playerCamera.transform);
     }
 
 

@@ -31,20 +31,18 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "a348c38f-67a8-416c-9bd0-d1843b3912a3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "462de566-fd14-413a-849c-e2f097f67322",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "DesktopClassic",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "WASD",
                     "id": "61e438f0-5664-4f71-bb00-438f6271dda8",
@@ -114,11 +112,22 @@
                 {
                     "name": "",
                     "id": "05bbae78-37c9-4aa6-b1d5-04ac3d06ad71",
-                    "path": "",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "DesktopClassic",
                     "action": "UseSpell",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4a99c5a6-73f6-47f4-8d99-53c296982f85",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "DesktopClassic",
+                    "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
